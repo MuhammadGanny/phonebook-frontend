@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Reeact from 'react'
+//import './App.css';
+import './index';
+import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+import Button from '@mui/material/Button';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="nav">
+      <div className="div-container">
+        <div className="link">
+          <div className="text-wrapper">Contact Manager</div>
+        </div>
+        <div className="list">
+          <div className="item-link">
+            <HomeIcon fontSize="small" />
+            <div className="home"> Home</div>
+          </div>
+          <div className="div">
+            <div className="symbol"></div>
+            <div className="add"> Add</div>
+          </div>
+          <div className="item-link-2">
+            <div className="symbol"></div>
+            <div className="about"> About</div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   );
 }
