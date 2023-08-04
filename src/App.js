@@ -17,8 +17,8 @@ function App() {
             List
         </h1>
       </div> 
-       <ADD/>
-      <About/>
+       {/* <ADD/>
+      <About/> */}
     </div>
   );
 }
