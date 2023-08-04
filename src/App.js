@@ -4,6 +4,8 @@ import './index';
 import Navbar from "./components/Navbar"
 import Button from '@mui/material/Button';
 import ADD from "./components/Add"
+import About from "./components/About"
+
 
 function App() {
   return (
@@ -14,8 +16,9 @@ function App() {
           <span className="text-prim">Contact </span>
             List
         </h1>
-      </div>
-      {/* <ADD/> */}
+      </div> 
+       <ADD/>
+      <About/>
     </div>
   );
 }
