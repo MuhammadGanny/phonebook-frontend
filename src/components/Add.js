@@ -1,6 +1,7 @@
 
 import Navbar from "./Navbar"
 import React from "react"
+import App from '../App';
 
 function Add(){
     return(

@@ -17,13 +17,25 @@ function App() {
           </h1>
         </div>
         <Routes>
-          <Route path="/about" component={About} />
-          <Route path="/contact/add" component={Add} />
+        <Route path="/about" element={<About />} />
+          <Route path="/contact/add" element={<Add />}/>
+          {/* <Route path="/" element={Home} /> */}
         </Routes>
       </div>
     </Router>
   );
 }
+
+// function Home() {
+//   return (
+//     <div className="container">
+//       <h1 className="display">
+//         <span className="text-prim">Contact </span>
+//         List
+//       </h1>
+//     </div>
+//   );
+// }
 
 export default App;
 

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import App from '../App';
 
 function Navbar() {
   return (
@@ -12,7 +13,7 @@ function Navbar() {
         <div>
           <ul className="nav-option">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/home">
                 <HomeIcon />
                 <span className="nav-text">Home</span>
               </Link>
