@@ -4,20 +4,24 @@ import Navbar from './components/Navbar';
 
 import About from './components/About'; // Update the import
 import Add from './components/Add'; // Update the import
+import ContactList from './components/ContactList'
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        {/* <Navbar />
         <div className="container">
           <h1 className="display">
             <span className="text-prim">Contact </span>
             List
           </h1>
-        </div>
+        </div> */}
+        {/* <ContactList/> */}
         <Routes>
-        <Route path="/about" element={<About />} />
+          <Route path="/" element={<ContactList/>} /> 
+          <Route path="/home" element={<ContactList/>} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact/add" element={<Add />}/>
           {/* <Route path="/" element={Home} /> */}
         </Routes>
@@ -26,16 +30,7 @@ function App() {
   );
 }
 
-// function Home() {
-//   return (
-//     <div className="container">
-//       <h1 className="display">
-//         <span className="text-prim">Contact </span>
-//         List
-//       </h1>
-//     </div>
-//   );
-// }
+
 
 export default App;
 
