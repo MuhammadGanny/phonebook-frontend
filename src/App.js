@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; // Import Route
-import Navbar from './components/Navbar';
+//import Navbar from './components/Navbar';
 
 import About from './components/About'; // Update the import
 import Add from './components/Add'; // Update the import
@@ -10,20 +10,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Navbar />
-        <div className="container">
-          <h1 className="display">
-            <span className="text-prim">Contact </span>
-            List
-          </h1>
-        </div> */}
-        {/* <ContactList/> */}
+      
         <Routes>
           <Route path="/" element={<ContactList/>} /> 
           <Route path="/home" element={<ContactList/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact/add" element={<Add />}/>
-          {/* <Route path="/" element={Home} /> */}
         </Routes>
       </div>
     </Router>
