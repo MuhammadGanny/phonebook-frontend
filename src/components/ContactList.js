@@ -84,10 +84,11 @@ function ContactList() {
                       />
                     </h4>
                     {editingContact && editingContact.id === contact.id && (
-                      <form onSubmit={handleUpdateSubmit}>
+                      <form onSubmit={handleUpdateSubmit} className="update-form">
                         <input
                           type="text"
                           value={updatedContact.name}
+                          className="bg-light list-group-item"
                           onChange={(e) =>
                             setUpdatedContact({
                               ...updatedContact,
@@ -98,6 +99,7 @@ function ContactList() {
                         <input
                           type="email"
                           value={updatedContact.email}
+                          className="bg-light list-group-item"
                           onChange={(e) =>
                             setUpdatedContact({
                               ...updatedContact,
@@ -108,6 +110,7 @@ function ContactList() {
                         <input
                           type="text"
                           value={updatedContact.phone}
+                          className="bg-light list-group-item"
                           onChange={(e) =>
                             setUpdatedContact({
                               ...updatedContact,
@@ -115,7 +118,7 @@ function ContactList() {
                             })
                           }
                         />
-                        <button type="submit">Update</button>
+                        <button type="submit" className="btn btn-primary update-button">Update</button>
                       </form>
                     )}
                     {!editingContact || editingContact.id !== contact.id ? (
@@ -129,7 +132,7 @@ function ContactList() {
                       </ul>
                     ) : null}
                     <button
-                      className="btn btn-danger"
+                      className="btn btn-primary update-button"
                       onClick={() => deleteContact(contact.id)}
                     >
                       Delete
