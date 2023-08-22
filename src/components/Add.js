@@ -19,7 +19,7 @@ function Add({onAdd}){
 
       try {
         // Send POST request to backend API
-        const response = await axios.post('http://localhost:4000/api/phonebook', newContact);
+        const response = await axios.post('https://phonebook-backend-lo11.onrender.com/api/phonebook', newContact);
         if (response.status === 201) {
           // Update state and parent component
           onAdd(response.data);

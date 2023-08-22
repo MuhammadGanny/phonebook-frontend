@@ -30,7 +30,7 @@ function ContactList() {
     async function deleteContact(id) {
       try {
         const response = await axios.delete(
-          `http://localhost:4000/api/phonebook/${id}`
+          `https://phonebook-backend-lo11.onrender.com/api/phonebook/${id}`
         );
         console.log('Contact deleted:', response.data);
         fetchContacts(); // Refresh the contact list after successful delete
@@ -53,7 +53,7 @@ function ContactList() {
       e.preventDefault();
       try {
         const response = await axios.put(
-          `http://localhost:4000/api/phonebook/${updatedContact.id}`,
+          `https://phonebook-backend-lo11.onrender.com/api/phonebook/${updatedContact.id}`,
           updatedContact
         );
         console.log('Contact updated:', response.data);
