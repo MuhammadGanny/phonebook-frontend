@@ -13,22 +13,22 @@ function Navbar() {
         <div>
           <ul className="nav-option">
             <li className="nav-item">
-              {/* <Link className="nav-link" to="/home"> */}
+              <Link className="nav-link" to="/home">
                 <HomeIcon />
                 <span className="nav-text">Home</span>
-              {/* </Link> */}
+              </Link>
             </li>
             <li className="nav-item">
-              {/* <Link className="nav-link" to="/contact/add"> */}
+              <Link className="nav-link" to="/contact/add">
                 <AddOutlinedIcon />
                 <span className="nav-text">Add</span>
-              {/* </Link> */}
+              </Link>
             </li>
             <li className="nav-item">
-              {/* <Link className="nav-link" to="/about"> */}
+              <Link className="nav-link" to="/about">
                 <InfoIcon />
                 <span className="nav-text">About</span>
-              {/* </Link> */}
+              </Link>
             </li>
           </ul>
         </div>

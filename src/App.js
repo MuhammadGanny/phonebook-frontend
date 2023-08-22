@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; // Import Route
+import { HashRouter as Router,Routes, Route } from 'react-router-dom'; // Import Route
 //import Navbar from './components/Navbar';
 
 import About from './components/About'; // Update the import
@@ -7,23 +7,20 @@ import Add from './components/Add'; // Update the import
 import ContactList from './components/ContactList'
 
 function App() {
-  useEffect(() => {
-    console.log("hellowworld")
-  }, []);
-  return <ContactList/>
-  // return (
-  //   <Router>
-  //     <div className="App">
+
+  return (
+    <Router>
+      <div className="App">
       
-  //       <Routes>
-  //         <Route path="/" element={<ContactList/>} /> 
-  //         <Route path="/home" element={<ContactList/>} />
-  //         <Route path="/about" element={<About />} />
-  //         <Route path="/contact/add" element={<Add />}/>
-  //       </Routes>
-  //     </div>
-  //   </Router>
-  // );
+        <Routes>
+          <Route path="/" element={<ContactList/>} /> 
+          <Route path="/home" element={<ContactList/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact/add" element={<Add />}/>
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 
