@@ -10,19 +10,20 @@ function App() {
   useEffect(() => {
     console.log("hellowworld")
   }, []);
-  return (
-    <Router>
-      <div className="App">
+  return <ContactList/>
+  // return (
+  //   <Router>
+  //     <div className="App">
       
-        <Routes>
-          <Route path="/" element={<ContactList/>} /> 
-          <Route path="/home" element={<ContactList/>} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact/add" element={<Add />}/>
-        </Routes>
-      </div>
-    </Router>
-  );
+  //       <Routes>
+  //         <Route path="/" element={<ContactList/>} /> 
+  //         <Route path="/home" element={<ContactList/>} />
+  //         <Route path="/about" element={<About />} />
+  //         <Route path="/contact/add" element={<Add />}/>
+  //       </Routes>
+  //     </div>
+  //   </Router>
+  // );
 }
 
 
