@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; // Import Route
 //import Navbar from './components/Navbar';
 
@@ -7,6 +7,9 @@ import Add from './components/Add'; // Update the import
 import ContactList from './components/ContactList'
 
 function App() {
+  useEffect(() => {
+    console.log("hellowworld")
+  }, []);
   return (
     <Router>
       <div className="App">
